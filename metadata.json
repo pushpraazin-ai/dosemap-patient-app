@@ -1,0 +1,6 @@
+{
+  "name": "DoseMAP Patient App",
+  "description": "Smart Medication Management - Every Dose Clearly Mapped for Osteoporosis & Chronic Therapy Tracking",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
