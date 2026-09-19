@@ -1,0 +1,16 @@
+{
+  "name": "DoseMAP - डोस नकाशा",
+  "short_name": "DoseMAP",
+  "description": "Every Dose Clearly Mapped. Smart Medication Management.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A2E65",
+  "theme_color": "#0A2E65",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 200" fill="none">
+  <defs>
+    <!-- Blue/Cyan Gradient for circular arc -->
+    <linearGradient id="blueArcGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#00A3E0" />
+      <stop offset="50%" stop-color="#0A2E65" />
+      <stop offset="100%" stop-color="#0077B6" />
+    </linearGradient>
+    <linearGradient id="cyanArcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="60%" stop-color="#0096C7" />
+      <stop offset="100%" stop-color="#0A2E65" />
+    </linearGradient>
+    <!-- Orange Gradient for arrows -->
+    <linearGradient id="orangeGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5400" />
+      <stop offset="60%" stop-color="#FF7A00" />
+      <stop offset="100%" stop-color="#FFAA00" />
+    </linearGradient>
+    <linearGradient id="medGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA000" />
+      <stop offset="70%" stop-color="#FF7A00" />
+      <stop offset="100%" stop-color="#E65100" />
+    </linearGradient>
+    <linearGradient id="dropGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7DD3FC" />
+      <stop offset="60%" stop-color="#00B4D8" />
+      <stop offset="100%" stop-color="#0077B6" />
+    </linearGradient>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- EMBLEM GROUP (Centered at X: 100, Y: 100) -->
+  <g transform="translate(0, 0)">
+    <!-- Outer Arc Left / Top (Deep Blue to Cyan) -->
+    <path d="M 100,20 C 50,20 18,58 18,105 C 18,138 36,164 62,177 C 46,163 36,138 36,107 C 36,68 64,36 100,36 C 132,36 158,58 167,88 L 179,80 C 168,45 137,20 100,20 Z" fill="url(#blueArcGrad)" />
+    
+    <!-- Secondary Inner Cyan Arc with Arrowhead -->
+    <path d="M 102,38 C 68,38 42,65 42,100 C 42,122 54,142 71,154 C 60,141 54,122 54,101 C 54,74 75,51 103,51 C 127,51 147,67 155,89 L 169,82 C 158,56 133,38 102,38 Z" fill="url(#cyanArcGrad)" opacity="0.9" />
+
+    <!-- Outer Orange Arrow 1 at Bottom -->
+    <path d="M 28,142 C 34,158 45,171 60,179 C 78,189 101,190 123,184 C 134,181 144,175 152,168 L 157,173 L 168,144 L 138,150 L 144,155 C 132,165 113,172 95,169 C 77,166 61,153 50,138 L 28,142 Z" fill="url(#orangeGrad)" />
+    
+    <!-- Inner Orange Arrow 2 -->
+    <path d="M 68,162 C 84,170 103,170 120,165 C 132,161 142,154 148,146 L 153,151 L 164,125 L 136,132 L 141,137 C 133,144 122,148 110,150 C 97,152 83,148 72,140 L 68,162 Z" fill="url(#orangeGrad)" />
+
+    <!-- Droplet at Needle Tip -->
+    <path d="M 172,66 C 168,58 162,49 162,44 C 162,37 167,31 174,31 C 181,31 186,37 186,44 C 186,52 178,61 172,66 Z" fill="url(#dropGrad)" />
+    <!-- Droplet shine -->
+    <ellipse cx="171" cy="40" rx="2" ry="4" transform="rotate(-30 171 40)" fill="#FFFFFF" opacity="0.7" />
+
+    <!-- SYRINGE (Angled at ~42deg, pointing to droplet) -->
+    <g transform="translate(100, 106) rotate(-42)">
+      <!-- Needle -->
+      <line x1="0" y1="-50" x2="0" y2="-88" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round" />
+      <line x1="-0.5" y1="-50" x2="-0.5" y2="-87" stroke="#CBD5E1" stroke-width="1" />
+      
+      <!-- Needle Hub (Orange Cone) -->
+      <polygon points="-5,-42 5,-42 3,-50 -3,-50" fill="#FF7A00" />
+
+      <!-- Barrel Glass Outer -->
+      <rect x="-14" y="-42" width="28" height="74" rx="3" fill="#E0F2FE" stroke="#0096C7" stroke-width="2.5" />
+      
+      <!-- Medicine Fluid Inside -->
+      <rect x="-11.5" y="-22" width="23" height="51" fill="url(#medGrad)" />
+      <!-- Fluid Meniscus Highlight -->
+      <ellipse cx="0" cy="-22" rx="11.5" ry="3.5" fill="#FFAA00" />
+      <!-- Glass highlight reflection -->
+      <rect x="-10" y="-39" width="4" height="68" rx="2" fill="#FFFFFF" opacity="0.55" />
+
+      <!-- Syringe Measurement Ticks -->
+      <line x1="6" y1="-32" x2="12" y2="-32" stroke="#0077B6" stroke-width="1.8" />
+      <line x1="8" y1="-22" x2="12" y2="-22" stroke="#0077B6" stroke-width="1.8" />
+      <line x1="5" y1="-12" x2="12" y2="-12" stroke="#0A2E65" stroke-width="2" />
+      <text x="3" y="-10" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="6.5" font-weight="800" fill="#0A2E65" text-anchor="end">5ml</text>
+      
+      <line x1="8" y1="-2" x2="12" y2="-2" stroke="#0077B6" stroke-width="1.8" />
+      <line x1="8" y1="8" x2="12" y2="8" stroke="#0077B6" stroke-width="1.8" />
+      <line x1="5" y1="18" x2="12" y2="18" stroke="#0A2E65" stroke-width="2" />
+      <text x="3" y="20" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="6.5" font-weight="800" fill="#0A2E65" text-anchor="end">2ml</text>
+
+      <!-- Barrel Collar / Flange -->
+      <rect x="-19" y="32" width="38" height="6" rx="2.5" fill="#0A2E65" />
+
+      <!-- Plunger Shaft -->
+      <rect x="-4" y="38" width="8" height="28" fill="#0284C7" />
+      <!-- Plunger Thumb Rest -->
+      <rect x="-16" y="66" width="32" height="7" rx="3.5" fill="#0A2E65" />
+      <rect x="-12" y="68" width="24" height="3" rx="1.5" fill="#38BDF8" opacity="0.6" />
+    </g>
+  </g>
+
+  <!-- TYPOGRAPHY / DOSE MAP TEXT -->
+  <!-- D in #0A2E65 -->
+  <!-- O half Orange (#FF7A00), half Navy (#0A2E65) -->
+  <!-- SE in #0A2E65 -->
+  <!-- MAP in #FF7A00 -->
+  <g transform="translate(210, 40)">
+    <!-- "D" -->
+    <text x="0" y="70" font-family="'Plus Jakarta Sans', 'Arial Black', Impact, sans-serif" font-size="76" font-weight="900" fill="#0A2E65" letter-spacing="-1">D</text>
+    
+    <!-- "O" split: Left half #FF7A00, Right half #0A2E65 -->
+    <g transform="translate(56, 12)">
+      <!-- Outer full O path / circles -->
+      <!-- Left half Orange -->
+      <path d="M 33,4 C 17,4 4,17 4,34 C 4,51 17,64 33,64 L 33,48 C 25,48 19,42 19,34 C 19,26 25,20 33,20 Z" fill="#FF7A00" />
+      <!-- Right half Navy Blue -->
+      <path d="M 33,4 C 49,4 62,17 62,34 C 62,51 49,64 33,64 L 33,48 C 41,48 47,42 47,34 C 47,26 41,20 33,20 Z" fill="#0A2E65" />
+    </g>
+
+    <!-- "S" and "E" -->
+    <text x="126" y="70" font-family="'Plus Jakarta Sans', 'Arial Black', Impact, sans-serif" font-size="76" font-weight="900" fill="#0A2E65" letter-spacing="-1">SE</text>
+
+    <!-- Space + "MAP" in Vibrant Orange -->
+    <text x="242" y="70" font-family="'Plus Jakarta Sans', 'Arial Black', Impact, sans-serif" font-size="76" font-weight="900" fill="#FF7A00" letter-spacing="-0.5">MAP</text>
+
+    <!-- TAGLINE 1: SMART MEDICATION MANAGEMENT -->
+    <text x="2" y="98" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="14.5" font-weight="800" fill="#0A2E65" letter-spacing="1.5">SMART MEDICATION MANAGEMENT</text>
+
+    <!-- TAGLINE 2: Every Dose Clearly Mapped. -->
+    <text x="3" y="124" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="17" font-weight="500" fill="#0A2E65" letter-spacing="0.2">Every Dose Clearly Mapped.</text>
+  </g>
+</svg>
